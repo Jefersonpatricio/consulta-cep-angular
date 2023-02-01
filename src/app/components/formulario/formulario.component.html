@@ -1,0 +1,40 @@
+<div class="container">
+  <h1>Busca CEP</h1>
+  <p>Projeto para busca de CEP realizado em Angular 14</p>
+
+  <div class="formulario">
+    <form #f="ngForm" method="get">
+      <label for="nome">CEP</label>
+      <input
+        #Busca
+        type="text"
+        name="cep"
+        id="cep"
+        ngModel
+        [(ngModel)]="cep"
+        min="8"
+        max="8"
+        required
+        f
+      />
+      <label for="logradouro">RUA</label>
+      <input
+        #rua
+        type="text"
+        name="logradouro"
+        id="logradouro"
+        ngModel
+        [(ngModel)]="address!.logradouro"
+        disabled="..."
+        f
+      />
+      <button (click)="buscaCEP()">buscar</button>
+      <div class="retorno" *ngIf="result">
+        <p>Cidade: {{ address.localidade }}</p>
+        <p>Bairro: {{ address.bairro }}</p>
+        <p>Estado: {{ address.uf }}</p>
+        <p>DDD: {{ address.ddd }}</p>
+      </div>
+    </form>
+  </div>
+</div>

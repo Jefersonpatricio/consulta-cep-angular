@@ -1,0 +1,9 @@
+*{
+    font-size: 1.2rem;
+    font-family: helvetica;
+}
+
+body{
+    display: flex;
+    box-sizing: border-box;
+}

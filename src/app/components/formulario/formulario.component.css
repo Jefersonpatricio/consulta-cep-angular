@@ -1,0 +1,60 @@
+input {
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    border: 1px solid lightsteelblue;
+    background: #ffffff;
+    padding-left: 15px;
+    font-size: 1.2rem;
+}
+
+input:disabled{
+    background: #e1e1e1;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario{
+    width: 40%;
+    background-color: #f0f0f0;
+    padding: 25px;
+    border-radius: 9px;
+}
+
+.retorno{
+    font-size: 1.2rem;
+    font-family: helvetica;
+}
+
+         
+button {
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    border: none;
+  }
+
+  button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
